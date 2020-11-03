@@ -74,7 +74,7 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog2";
-            this.openFileDialog1.Filter = "Изображения (png)|*.png| Изображения (jpg)|*.jpg";
+            this.openFileDialog1.Filter = "Изображения (jpg)|*.jpg|Изображения (png)|*.png";
             // 
             // nud1
             // 
