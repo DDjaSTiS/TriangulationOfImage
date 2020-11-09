@@ -50,9 +50,9 @@ namespace TriangulationOfImage
             List<Line> lines = new List<Line>();
             for (int i = 0; i < triangles.Count; i++)
             {
-                var pix1 = new Pixel(triangles[i].Color1, triangles[i].Point1);
-                var pix2 = new Pixel(triangles[i].Color2, triangles[i].Point2);
-                var pix3 = new Pixel(triangles[i].Color3, triangles[i].Point3);
+                var pix1 = new Pixel(triangles[i].Color1, triangles[i].Points[0]);
+                var pix2 = new Pixel(triangles[i].Color2, triangles[i].Points[1]);
+                var pix3 = new Pixel(triangles[i].Color3, triangles[i].Points[2]);
                 lines.Add(new Line(pix1, pix2));
                 lines.Add(new Line(pix1, pix3));
                 lines.Add(new Line(pix2, pix3));

@@ -5,23 +5,19 @@ namespace TriangulationOfImage
 {
     public class Triangle : Line
     {
-        public Point Point3 { get; set; }
         public Color Color3 { get; set; }
         public PointF Center { get; set; }
         public double Radius { get; set; }
         public Point[] Points { get; set; }
         public Triangle (Pixel p1, Pixel p2, Pixel p3) : base (p1,p2,p3)
         {
-            Point1 = p1.Point1;
-            Point2 = p2.Point1;
-            Point3 = p3.Point1;
             Color1 = p1.Color1;
             Color2 = p2.Color1;
             Color3 = p3.Color1;
             Points = new Point[3];
-            Points[0] = Point1;
-            Points[1] = Point2;
-            Points[2] = Point3;
+            Points[0] = p1.Point1;
+            Points[1] = p2.Point1;
+            Points[2] = p3.Point1;
             GetCenter();
             GetRadius();
         }
@@ -31,9 +27,9 @@ namespace TriangulationOfImage
         }
         public void GetCenter()
         {
-            PointF PF1 = Point1;
-            PointF PF2 = Point2;
-            PointF PF3 = Point3;
+            PointF PF1 = Points[0];
+            PointF PF2 = Points[1];
+            PointF PF3 = Points[2];
             PointF centerPoint1 = new PointF((PF2.X + PF1.X)/2, (PF2.Y + PF1.Y)/2);
             PointF centerPoint2 = new PointF((PF3.X + PF2.X)/2, (PF3.Y + PF2.Y)/2);
             float k1;
