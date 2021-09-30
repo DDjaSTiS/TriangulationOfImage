@@ -33,7 +33,8 @@ namespace TriangulationOfImage
                             k++;
                         }
                     }
-                    var pointOnImage = FarthestPixelFromAverageByBrightness(pixels, brightnessStep);
+                    //var pointOnImage = FarthestPixelFromAverageByBrightness(pixels, brightnessStep);
+                    var pointOnImage = ClosestPixelToAverageByBrightness(pixels, brightnessStep);
                     if (pointOnImage != null)
                         points.Add((Pixel)pointOnImage);
                 }
@@ -143,7 +144,29 @@ namespace TriangulationOfImage
             else
                 return null;
         }
-        
+        public static object ClosestPixelToAverageByBrightness(Pixel[] pixels, float brightnessStep)
+        {
+            float sumOfPixelsBrightness = 0;
+            for (int i = 0; i < pixels.Length; i++)
+                sumOfPixelsBrightness += pixels[i].Color1.GetBrightness();
+            float avrg = sumOfPixelsBrightness / pixels.Length;
+            float minDifference = 100;
+            short indexOfFarthest = -1;
+            for (int i = 0; i < pixels.Length; i++)
+            {
+                var t = Math.Abs(pixels[i].Color1.GetBrightness() - avrg);
+                if (t < minDifference)
+                {
+                    minDifference = t;
+                    indexOfFarthest = (short)i;
+                }
+            }
+            if (minDifference > brightnessStep)
+                return pixels[indexOfFarthest];
+            else
+                return null;
+        }
+
         public static Color GetAvrgColor(Color[] colors)
         {
             ushort red = 0;

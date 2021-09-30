@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\TriangulationOfImage\TriangulationOfImage\bin\Debug\TriangulationOfImage.exe.config
+C:\Users\User\source\repos\TriangulationOfImage\TriangulationOfImage\bin\Debug\TriangulationOfImage.exe
+C:\Users\User\source\repos\TriangulationOfImage\TriangulationOfImage\bin\Debug\TriangulationOfImage.pdb
+C:\Users\User\source\repos\TriangulationOfImage\TriangulationOfImage\obj\Debug\TriangulationOfImage.csprojAssemblyReference.cache
+C:\Users\User\source\repos\TriangulationOfImage\TriangulationOfImage\obj\Debug\TriangulationOfImage.Properties.Resources.resources
+C:\Users\User\source\repos\TriangulationOfImage\TriangulationOfImage\obj\Debug\TriangulationOfImage.csproj.GenerateResource.cache
+C:\Users\User\source\repos\TriangulationOfImage\TriangulationOfImage\obj\Debug\TriangulationOfImage.exe
+C:\Users\User\source\repos\TriangulationOfImage\TriangulationOfImage\obj\Debug\TriangulationOfImage.pdb
+C:\Users\User\source\repos\TriangulationOfImage\TriangulationOfImage\obj\Debug\TriangulationOfImage.Form1.resources
+C:\Users\User\source\repos\TriangulationOfImage\TriangulationOfImage\obj\Debug\TriangulationOfImage.csproj.CoreCompileInputs.cache

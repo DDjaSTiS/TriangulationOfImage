@@ -80,7 +80,7 @@
             // 
             this.nud1.Location = new System.Drawing.Point(219, 0);
             this.nud1.Maximum = new decimal(new int[] {
-            60,
+            500,
             0,
             0,
             0});
@@ -109,12 +109,12 @@
             // 
             // nud2
             // 
-            this.nud2.DecimalPlaces = 3;
+            this.nud2.DecimalPlaces = 5;
             this.nud2.Increment = new decimal(new int[] {
             1,
             0,
             0,
-            131072});
+            327680});
             this.nud2.Location = new System.Drawing.Point(463, 0);
             this.nud2.Maximum = new decimal(new int[] {
             3,
@@ -125,15 +125,15 @@
             1,
             0,
             0,
-            196608});
+            327680});
             this.nud2.Name = "nud2";
-            this.nud2.Size = new System.Drawing.Size(53, 20);
+            this.nud2.Size = new System.Drawing.Size(70, 20);
             this.nud2.TabIndex = 4;
             this.nud2.Value = new decimal(new int[] {
             1,
             0,
             0,
-            131072});
+            327680});
             // 
             // label2
             // 
