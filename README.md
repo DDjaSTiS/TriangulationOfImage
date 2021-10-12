@@ -1,5 +1,5 @@
 # Triangulation of Image
-Technology: Winforms
+Technology: Windows Forms
 ## Description
 Application for triangulating images (Low-poly Art).
 The operation of the application consists of two algorithms - to gain set of pixels where pixel brightness changes dramatically, and to build Delaunay triangulation on this set.
